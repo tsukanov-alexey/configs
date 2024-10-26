@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "blue",
+          "properties": {
+            "display_host": true
+          },
+          "style": "plain",
+          "template": "<green></>{{ .UserName }}{{ if .Root }}💀{{ else }}㉿{{ end }}{{ .HostName }}",
+          "type": "session"
+        },
+        {
+          "foreground": "yellow",
+          "properties": {
+            "fetch_version": false,
+            "fetch_virtual_env": true
+          },
+          "style": "plain",
+          "template": "<green> >> </>[py] {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }}{{ end }}{{ .Full }}{{ end }}",
+          "type": "python"
+        },
+        {
+          "foreground": "cyan",
+          "properties": {
+            "folder_separator_icon": "<white>/</>",
+            "style": "agnoster_short",
+            "max_depth": 5
+          },
+          "style": "plain",
+          "template": "<green> >> </>{{ .Path }}",
+          "type": "path"
+        },
+        {
+          "foreground": "yellow",
+          "style": "plain",
+          "template": "<green> >> </>{{ .HEAD }}",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "blue",
+          "style": "plain",
+          "template": "$ ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "version": 2,
+  "auto_upgrade": false
+}

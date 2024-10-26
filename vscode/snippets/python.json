@@ -1,0 +1,44 @@
+{
+	"Entry point": {
+		"prefix": "entry",
+		"body": [
+			"def main() -> None:",
+			"    pass",
+			"",
+			"",
+			"if __name__ == '__main__':",
+			"    main()",
+			""
+		]
+	},
+	"Asyncronous entry point": {
+		"prefix": "aentry",
+		"body": [
+			"import asyncio",
+			"",
+			"",
+			"async def main() -> None:",
+			"    pass",
+			"",
+			"",
+			"if __name__ == '__main__':",
+			"    asyncio.run(main())",
+			""
+		]
+	},
+
+	"Function definition": {
+		"prefix": "def",
+		"body": [
+			"def ${1:function}($2) -> ${3:None}:",
+			"\t$0"
+		]
+	},
+	"Asyncronous function definition": {
+		"prefix": "adef",
+		"body": [
+			"async def ${1:function}($2) -> ${3:None}:",
+			"\t$0"
+		]
+	}
+}

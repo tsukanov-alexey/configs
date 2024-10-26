@@ -1,0 +1,289 @@
+{
+    "terminal.integrated.defaultProfile.windows": "PowerShell 7",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell 7": {
+            "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+            "icon": "terminal-powershell"
+        },        
+    },
+
+    "editor.linkedEditing": true,
+
+    // Appearance -----------------------------------------
+
+    "window.commandCenter": false,
+    "window.autoDetectColorScheme": true,
+    
+    "workbench.iconTheme": "catppuccin-perfect-dark",
+    "workbench.preferredLightColorTheme": "Default Light Modern",
+    "workbench.preferredDarkColorTheme": "Eva Dark",
+
+    "editor.fontFamily": "'Maple Mono', Consolas, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    
+    "terminal.integrated.fontFamily": "Agave Nerd Font Mono",
+    "terminal.integrated.fontSize": 14,
+
+
+    
+    // Tooling --------------------------------------------
+
+    // -- Custom Language Properties ----------------------
+
+    "custom-language-properties": {
+        "php.comments.lineComment": "#"
+    },
+
+
+    // -- GitLens -----------------------------------------
+
+    "gitlens.graph.layout": "editor",
+
+
+    // -- CodeSnap ----------------------------------------
+
+    "codesnap.showLineNumbers": true,
+    "codesnap.realLineNumbers": false,
+    "codesnap.showWindowControls": false,
+    "codesnap.showWindowTitle": false,
+    "codesnap.containerPadding": "1em",
+    "codesnap.roundedCorners": true,
+    "codesnap.transparentBackground": false,
+    "codesnap.backgroundColor": "#a78cfa", // default
+    // "codesnap.backgroundColor": "#e06c75", // bad
+    // "codesnap.backgroundColor": "#e4bf7f", // ok
+    // "codesnap.backgroundColor": "#98c379", // good
+
+
+
+    // Programming Languages ------------------------------
+
+    // -- Markdown ----------------------------------------
+
+    "[markdown]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 80,
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
+    },
+
+
+    // -- JSON --------------------------------------------
+
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+
+
+    // -- HTML --------------------------------------------
+
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features",
+        "editor.tabSize": 4,
+        "editor.fontLigatures": false,
+    },
+    "[django-html]": {
+        "editor.tabSize": 4,
+    },
+
+    "emmet.includeLanguages": {
+        "django-html": "html",
+    },
+    "emmet.syntaxProfiles": {
+        "html": {
+            "inline_break": 1,
+        },
+    },
+    "html.format.wrapLineLength": 0,
+
+
+    // -- CSS ---------------------------------------------
+
+    
+
+
+    // -- JavaScript --------------------------------------
+
+
+
+    // -- PHP ---------------------------------------------
+    
+    "php.validate.run": "onType",
+    "php.suggest.basic": false,
+
+    
+    // ---- Laravel ---------------------------------------
+
+
+    // ---- Blade -----------------------------------------
+
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+    },
+    "bladeFormatter.format.enabled": true,
+    "bladeFormatter.format.wrapLineLength": 1000000,
+    "bladeFormatter.format.wrapAttributes": "auto",
+    "bladeFormatter.format.sortHtmlAttributes": "none",
+    "bladeFormatter.format.wrapAttributesMinAttrs": 10000,
+    "bladeFormatter.format.sortTailwindcssClasses": false,
+
+
+
+    // -- Python ------------------------------------------
+
+    // ---- Virtual Environments --------------------------
+
+    "python.venvFolders": [
+        "C:\\Users\\Alexey\\AppData\\Local\\pypoetry\\Cache\\virtualenvs"
+    ],
+
+    // ---- Code style ------------------------------------
+
+    "ruff.lint.enable": false,
+
+    // ---- Analysis --------------------------------------
+
+    "python.analysis.typeCheckingMode": "standard",
+    "python.analysis.autoImportCompletions": false,
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "selenium",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "PySide6",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "pygame",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "django",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "rest_framework",
+            "depth": 10,
+            "includeAllSymbols": true,
+        },
+        {
+            "name": "sqlalchemy",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "braces",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "channels",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "channels_redis",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "requests",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "PyQt6",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "fake_useragent",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "arcade",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "telebot",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "peewee",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "telethon",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "aiogram",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "PySide6",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "PIL",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "aiohttp",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "selectolax",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+    ],
+
+
+
+    // AUTO-ADDED CONFIGURATION (TODO: refactor)
+    "cSpell.language": "en,ru",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "cSpell.userWords": [
+        "aiofiles",
+        "aiogram",
+        "aiohttp",
+        "aiosqlite",
+        "APIC",
+        "dotenv",
+        "easyid",
+        "executemany",
+        "Initializable",
+        "kbps",
+        "pathvalidate",
+        "pytube",
+        "ROWID"
+    ],
+    "cSpell.enabled": false,
+    "workbench.productIconTheme": "fluent-icons",
+}
